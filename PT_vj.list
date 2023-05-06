@@ -1,6 +1,3 @@
-# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
-DOMAIN-SUFFIX,acl4.ssr
-
 # PT地址
 DOMAIN-SUFFIX,nicept.net
 DOMAIN-SUFFIX,pt.btschool.club
