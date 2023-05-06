@@ -1,21 +1,20 @@
 # 直连列表
 
 # MyList
-DOMAIN-SUFFIX,13th.tech
-DOMAIN-SUFFIX,423down.com
-DOMAIN-SUFFIX,bokecc.com
-DOMAIN-SUFFIX,chaipip.com
-DOMAIN-SUFFIX,chinaplay.store
-DOMAIN-SUFFIX,hrtsea.com
-DOMAIN-SUFFIX,kaikeba.com
-DOMAIN-SUFFIX,laomo.me
-DOMAIN-SUFFIX,mpyit.com
-DOMAIN-SUFFIX,msftconnecttest.com
-DOMAIN-SUFFIX,msftncsi.com
-DOMAIN-SUFFIX,qupu123.com
-DOMAIN-SUFFIX,pdfwifi.com
-DOMAIN-SUFFIX,zhenguanyu.biz
-DOMAIN-SUFFIX,zhenguanyu.com
+DOMAIN-SUFFIX,jianguoyun.com
+DOMAIN-SUFFIX,tjnu
+
+# PT地址
+DOMAIN-SUFFIX,nicept.net
+DOMAIN-SUFFIX,pt.btschool.club
+DOMAIN-SUFFIX,hdarea.co
+DOMAIN-SUFFIX,lemonhd.org
+DOMAIN-SUFFIX,hdfans.org
+DOMAIN-SUFFIX,hdatmos.club
+DOMAIN-SUFFIX,pthome.net
+DOMAIN-SUFFIX,skyey2.com
+DOMAIN-SUFFIX,pttime.org
+DOMAIN-SUFFIX,tjupt.org
 
 # CN域名直连(中国|公司|网络)
 DOMAIN-SUFFIX,cn
