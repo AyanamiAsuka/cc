@@ -1,3 +1,4 @@
+# 直接走流量的应用
 PROCESS-NAME,hysteria
 PROCESS-NAME,hysteria.exe
 PROCESS-NAME,leaf
