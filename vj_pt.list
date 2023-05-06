@@ -1,0 +1,14 @@
+# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
+DOMAIN-SUFFIX,acl4.ssr
+
+# PT地址
+DOMAIN-SUFFIX,nicept.net
+DOMAIN-SUFFIX,pt.btschool.club
+DOMAIN-SUFFIX,hdarea.co
+DOMAIN-SUFFIX,lemonhd.org
+DOMAIN-SUFFIX,hdfans.org
+DOMAIN-SUFFIX,hdatmos.club
+DOMAIN-SUFFIX,pthome.net
+DOMAIN-SUFFIX,skyey2.com
+DOMAIN-SUFFIX,pttime.org
+DOMAIN-SUFFIX,tjupt.org
