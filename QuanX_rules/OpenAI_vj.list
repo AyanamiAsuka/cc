@@ -11,5 +11,5 @@ HOST,challenges.cloudflare.com,OpenAI
 HOST-SUFFIX,ai.com,OpenAI
 HOST-SUFFIX,identrust.com,OpenAI
 HOST-SUFFIX,openai.com,OpenAI
-HOST-SUFFIX,openaiapi-site.azureedge.net
+HOST-SUFFIX,openaiapi-site.azureedge.net,OpenAI
 HOST-SUFFIX,stripe.com,OpenAI
