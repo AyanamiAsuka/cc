@@ -12,23 +12,17 @@ parsers: # array
   # 建立自己的配置
     yaml:
       prepend-proxy-groups: # 建立策略组
-      - name: 🥷PROXY
+      - name: 🚀 节点选择
         type: select
         url: http://www.google.com/generate_204
         interval: 300
         proxies:
-         - 🚀URL-TEST
-         - 🎛LOAD-BALANCE
-         - 🕹Fallback
-         - 👆SELECT
+         - 🇭🇰 香港
+         - 🇯🇵 日本
+         - 🇸🇬 新加坡
+         - 🇺🇸 美国         
+         - 👆 手动切换
          - DIRECT
-         - 🇭🇰香港
-         - 🐳台湾
-         - 🇯🇵日本
-         - 🇸🇬新加坡
-         - 🇰🇷韩国
-         - 🇺🇸美国
-         - 👨‍🎤其他
 
       - name: 👆SELECT
         type: select
