@@ -27,6 +27,8 @@ parsers: # array
       - name: 👆 手动切换
         type: select
         proxies:
+          - DIRECT
+          - 🚀 节点选择
 
       - name: 💭 OpenAI
         type: select
