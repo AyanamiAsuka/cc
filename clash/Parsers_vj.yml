@@ -34,10 +34,10 @@ parsers: # array
         type: select
         proxies:
 
-      - name: 💭 OpenAI
+      - name: 💭 OpenAi
         type: select
         proxies:
-          - 💭 OpenAI节点
+          - 💭 OpenAi节点
           - 🇯🇵 日本
           - 🇺🇸 美国 
           - 🇸🇬 新加坡   
@@ -112,12 +112,6 @@ parsers: # array
           - 🎥 TikTok节点
           - DIRECT
 
-
-      - name: 🎯 全球直连
-        type: select
-        proxies:
-          - DIRECT
-
       - name: 🛑 广告拦截
         type: select
         proxies:
@@ -129,7 +123,7 @@ parsers: # array
         proxies:
           - ⁉  黑|白
 
-      - name: 💭 OpenAI节点
+      - name: 💭 OpenAi节点
         type: select
         proxies:
 
@@ -172,7 +166,7 @@ parsers: # array
          
       commands:
         - proxy-groups.(👆 手动切换).proxies=[]proxyNames
-        - proxy-groups.(💭 OpenAI节点).proxies=[]proxyNames
+        - proxy-groups.(💭 OpenAi节点).proxies=[]proxyNames
         - proxy-groups.(🎥 奈飞节点).proxies=[]proxyNames
         - proxy-groups.(🎥 TikTok节点).proxies=[]proxyNames
         - proxy-groups.🇭🇰 香港.proxies=[]proxyNames|港|香港|🇭🇰|HK|Hong Kong
@@ -182,24 +176,24 @@ parsers: # array
 
         - mixed-port=7890
 
-       # 为各个策略组添加一个DIRECT，避免机场节点无法匹配上面的正则筛选而导致配置出错。应该有其他办法避免，但是我不会。
-        - proxy-groups.🇭🇰 香港.proxies.0+DIRECT
-        - proxy-groups.🇯🇵 日本.proxies.0+DIRECT
-        - proxy-groups.🇺🇸 美国.proxies.0+DIRECT
-        - proxy-groups.🇸🇬 新加坡.proxies.0+DIRECT
+       # 为各个策略组添加一个REJECT，避免机场节点无法匹配上面的正则筛选而导致配置出错。应该有其他办法避免，但是我不会。
+        - proxy-groups.🇭🇰 香港.proxies.0+REJECT
+        - proxy-groups.🇯🇵 日本.proxies.0+REJECT
+        - proxy-groups.🇺🇸 美国.proxies.0+REJECT
+        - proxy-groups.🇸🇬 新加坡.proxies.0+REJECT
 
         
   # 添加规则
       prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理
         - RULE-SET,Download,DIRECT
-        - RULE-SET,OpenAi,💭 OpenAI
+        - RULE-SET,OpenAi,💭 OpenAi
         - RULE-SET,PrivateTracker,DIRECT
         - RULE-SET,Spotify,🍏 Spotify
         - RULE-SET,Local,DIRECT
         - RULE-SET,Direct_vj,DIRECT
         - RULE-SET,AdvertisingLite,🛑 广告拦截
-        - RULE-SET,GoogleCN,🎯 全球直连
-        - RULE-SET,SteamCN,🎯 全球直连
+        - RULE-SET,GoogleCN,DIRECT
+        - RULE-SET,SteamCN,DIRECT
         - RULE-SET,OneDrive,Ⓜ️ 微软云盘
         - RULE-SET,Microsoft,Ⓜ️ 微软服务
         - RULE-SET,Apple,🍎 苹果服务
@@ -227,7 +221,7 @@ parsers: # array
         OpenAi: # openai
           type: http
           behavior: classical
-          url: "https://cdn.jsdelivr.net/gh/Pukia-vj/cc@main/clash/rules/OpenAi_vj.yaml"
+          url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/OpenAi_vj.yaml"
           path: ./ruleset/OpenAi.yaml
           interval: 86400
 
