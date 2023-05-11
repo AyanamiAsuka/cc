@@ -21,14 +21,18 @@ parsers: # array
           - 🇯🇵 日本
           - 🇸🇬 新加坡
           - 🇺🇸 美国         
-          - 👆 手动切换
           - DIRECT
 
-      - name: 👆 手动切换
+      - name: ⁉  黑|白
         type: select
         proxies:
           - DIRECT
           - 🚀 节点选择
+          - 👆 手动切换  
+
+      - name: 👆 手动切换
+        type: select
+        proxies:
 
       - name: 💭 OpenAI
         type: select
@@ -44,6 +48,7 @@ parsers: # array
           - DIRECT
           - 🇺🇸 美国
           - 🚀 节点选择
+          - 👆 手动切换  
 
       - name: Ⓜ️ 微软云盘
         type: select
@@ -54,7 +59,7 @@ parsers: # array
           - 🇯🇵 日本
           - 🇸🇬 新加坡
           - 🇺🇸 美国
-          - 👆 手动切换
+          - 👆 手动切换  
 
       - name: Ⓜ️ 微软服务
         type: select
@@ -65,7 +70,7 @@ parsers: # array
           - 🇯🇵 日本
           - 🇸🇬 新加坡
           - 🇺🇸 美国
-          - 👆 手动切换
+          - 👆 手动切换  
 
       - name: 🐕 谷歌服务
         type: select
@@ -74,9 +79,7 @@ parsers: # array
           - 🚀 节点选择
           - 🇭🇰 香港
           - 🇯🇵 日本
-          - 🇸🇬 新加坡
           - 🇺🇸 美国
-          - 👆 手动切换
 
       - name: 🎮 游戏平台
         type: select
@@ -87,7 +90,7 @@ parsers: # array
           - 🇯🇵 日本
           - 🇸🇬 新加坡
           - 🇺🇸 美国
-          - 👆 手动切换
+          - 👆 手动切换  
 
       - name: 🍎 苹果服务
         type: select
@@ -95,22 +98,18 @@ parsers: # array
           - DIRECT
           - 🚀 节点选择
           - 🇭🇰 香港
-          - 🇯🇵 日本
-          - 🇸🇬 新加坡
           - 🇺🇸 美国
-          - 👆 手动切换
+          - 👆 手动切换  
 
       - name: 🎥 奈飞视频
         type: select
         proxies:
           - 🎥 奈飞节点
-          - 👆 手动切换
 
       - name: 🗽 TikTok
         type: select
         proxies:
           - 🎥 TikTok节点
-          - 👆 手动切换
           - DIRECT
 
 
@@ -118,7 +117,6 @@ parsers: # array
         type: select
         proxies:
           - DIRECT
-          - REJECT
 
       - name: 🛑 广告拦截
         type: select
@@ -129,13 +127,7 @@ parsers: # array
       - name: 🐟 漏网之鱼
         type: select
         proxies:
-          - DIRECT
-          - 🚀 节点选择
-          - 🇭🇰 香港
-          - 🇯🇵 日本
-          - 🇸🇬 新加坡
-          - 🇺🇸 美国
-          - 👆 手动切换
+          - ⁉  黑|白
 
       - name: 💭 OpenAI节点
         type: select
@@ -220,7 +212,7 @@ parsers: # array
         - RULE-SET,ProxyMedia,🎥 奈飞视频
         - RULE-SET,ProxyGFWlist,🚀 节点选择
         - GEOIP,CN,DIRECT
-        - MATCH,👆 手动切换 # ⭐️⭐️规则之外的，在这里来修改是白名单模式还是黑名单模式，具体在“👆 手动切换”选择代理或直连。
+        - MATCH,⁉  黑|白 # ⭐️⭐️规则之外的，在这里来修改是白名单模式还是黑名单模式，具体在“⁉  黑|白”选择代理或直连。
 
 
   # 添加规则集
