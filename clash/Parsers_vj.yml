@@ -214,10 +214,10 @@ parsers: # array
         - RULE-SET,TikTok,🗽 TikTok
         - RULE-SET,Epic,🎮 游戏平台
         - RULE-SET,Steam,🎮 游戏平台
-        - RULE-SET,Nintendo,🎮 游戏平台
         - RULE-SET,Netflix,🎥 奈飞视频
         - RULE-SET,ProxyMedia,🎥 奈飞视频
         - RULE-SET,ProxyGFWlist,🚀 节点选择
+        - RULE-SET,Global_Domain,🚀 节点选择
         - GEOIP,CN,DIRECT
         - MATCH,👆 手动切换 # ⭐️⭐️规则之外的，在这里来修改是白名单模式还是黑名单模式，具体在“👆 手动切换”选择代理或直连。
 
@@ -305,8 +305,8 @@ parsers: # array
           
         Apple: # apple
           type: http
-          behavior: classical
-          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Classical.yaml"
+          behavior: domain
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Apple/Apple_Domain.txt"
           path: ./ruleset/Apple.yaml
           interval: 86400
 
@@ -348,21 +348,28 @@ parsers: # array
         Netflix: # 奈飞视频
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_Classical.yaml"
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Netflix/Netflix_Classical.yaml"
           path: ./ruleset/Netflix.yaml
           interval: 86400
 
         ProxyMedia: # 国外媒体
           type: http
-          behavior: classical
-          url: "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Domain.txt"
+          behavior: domain
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/GlobalMedia/GlobalMedia_Domain.txt"
           path: ./ruleset/ProxyMedia.yaml
           interval: 86400
 
 
-        ProxyGFWlist: # GFW列表
+        ProxyGFWlist: 
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/Download_vj.txt"
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Global/Global.yaml"
           path: ./ruleset/ProxyGFWlist.yaml
+          interval: 86400
+          
+        Global_Domain:
+          type: http
+          behavior: domain
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Global/Global_Domain.txt"
+          path: ./ruleset/Global_Domain.yaml
           interval: 86400
