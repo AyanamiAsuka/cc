@@ -234,7 +234,7 @@ parsers: # array
           type: http
           behavior: classical
           url: "https://cdn.jsdelivr.net/gh/Pukia-vj/cc@main/clash/rules/OpenAi_vj.yaml"
-          path: ./ruleset/OpenAI.yaml
+          path: ./ruleset/OpenAi.yaml
           interval: 86400
 
         PrivateTracker: # PT下载
