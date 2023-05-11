@@ -124,13 +124,6 @@ parsers: # array
           - REJECT
           - DIRECT
 
-
-      - name: 🍃 应用净化
-        type: select
-        proxies:
-          - REJECT
-          - DIRECT
-
       - name: 🐟 漏网之鱼
         type: select
         proxies:
@@ -211,7 +204,6 @@ parsers: # array
         - RULE-SET,Local,DIRECT
         - RULE-SET,Direct_vj,DIRECT
         - RULE-SET,AdvertisingLite,🛑 广告拦截
-        - RULE-SET,BanProgramAD,🍃 应用净化
         - RULE-SET,GoogleCN,🎯 全球直连
         - RULE-SET,SteamCN,🎯 全球直连
         - RULE-SET,OneDrive,Ⓜ️ 微软云盘
@@ -280,28 +272,21 @@ parsers: # array
         AdvertisingLite: # 广告列表
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/Download_vj.txt"
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AdvertisingLite/AdvertisingLite.yaml"
           path: ./ruleset/AdvertisingLite.yaml
-          interval: 86400
-
-        BanProgramAD: # 应用内的广告
-          type: http
-          behavior: classical
-          url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/Download_vj.txt"
-          path: ./ruleset/BanProgramAD.yaml
           interval: 86400
 
         GoogleCN: # GoogleCN
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/Download_vj.txt"
+          url: "https://cdn.jsdelivr.net/gh/Pukia-vj/cc@main/clash/rules/GoogleCN.yaml"
           path: ./ruleset/GoogleCN.yaml
           interval: 86400
 
         SteamCN: # SteamCN
           type: http
           behavior: classical
-          url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/Download_vj.txt"
+          url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/SteamCN/SteamCN.yaml"
           path: ./ruleset/SteamCN.yaml
           interval: 86400
 
