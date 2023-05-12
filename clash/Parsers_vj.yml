@@ -14,8 +14,6 @@ parsers: # array
       prepend-proxy-groups: # 建立策略组
       - name: 🚀 节点选择
         type: select
-        url: http://www.google.com/generate_204
-        interval: 300
         proxies:
           - 🇭🇰 香港
           - 🇯🇵 日本
