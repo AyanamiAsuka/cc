@@ -116,11 +116,6 @@ parsers: # array
           - REJECT
           - DIRECT
 
-      - name: 🐟 漏网之鱼
-        type: select
-        proxies:
-          - ⁉  黑|白
-
       - name: 💭 OpenAi节点
         type: select
         proxies:
