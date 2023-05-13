@@ -179,6 +179,8 @@ parsers: # array
   # 添加规则
       prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理
         - RULE-SET,Download,DIRECT
+        - RULE-SET,MyList_direct,DIRECT
+        - RULE-SET,MyList_proxy,👆 手动切换
         - RULE-SET,OpenAi,💭 OpenAi
         - RULE-SET,PrivateTracker,DIRECT
         - RULE-SET,Spotify,🍏 Spotify
@@ -204,6 +206,20 @@ parsers: # array
 
   # 添加规则集
       mix-rule-providers: 
+        MyList_direct:
+          type: http
+          behavior: classical
+          url: "https://github.com/Pukia-vj/cc/blob/main/clash/rules/mylist_direct.yaml"
+          path: ./ruleset/MyList_direct.yaml
+          interval: 86400
+          
+        MyList_proxy:
+          type: http
+          behavior: classical
+          url: "https://github.com/Pukia-vj/cc/blob/main/clash/rules/mylist_proxy.yaml"
+          path: ./ruleset/MyList_proxy.yaml
+          interval: 86400
+        
         Download: # 下载
           type: http
           behavior: classical
