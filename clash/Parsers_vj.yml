@@ -209,14 +209,14 @@ parsers: # array
         MyList_direct:
           type: http
           behavior: classical
-          url: "https://github.com/Pukia-vj/cc/blob/main/clash/rules/mylist_direct.yaml"
+          url: "https://raw.githubusercontent.com/Pukia-vj/cc/blob/main/clash/rules/mylist_direct.yaml"
           path: ./ruleset/MyList_direct.yaml
           interval: 86400
           
         MyList_proxy:
           type: http
           behavior: classical
-          url: "https://github.com/Pukia-vj/cc/blob/main/clash/rules/mylist_proxy.yaml"
+          url: "https://raw.githubusercontent.com/Pukia-vj/cc/blob/main/clash/rules/mylist_proxy.yaml"
           path: ./ruleset/MyList_proxy.yaml
           interval: 86400
         
