@@ -124,28 +124,28 @@ parsers: # array
       - name: 🇭🇰 香港
         type: url-test
         url: http://www.google.com/generate_204
-        interval: 1800
+        interval: 300
         lazy: true
         tolerance: 50
       
       - name: 🇯🇵 日本
         type: url-test
         url: http://www.google.com/generate_204
-        interval: 1800
+        interval: 300
         lazy: true
         tolerance: 50
       
       - name: 🇸🇬 新加坡
         type: url-test
         url: http://www.google.com/generate_204
-        interval: 1800
+        interval: 300
         lazy: true
         tolerance: 50
 
       - name: 🇺🇸 美国
         type: url-test
         url: http://www.google.com/generate_204
-        interval: 1800
+        interval: 300
         lazy: true
         tolerance: 50
 
