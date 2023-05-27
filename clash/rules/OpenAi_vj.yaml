@@ -7,6 +7,7 @@ payload:
   - DOMAIN-SUFFIX,openai.com
   - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
   - DOMAIN-SUFFIX,stripe.com
+  - DOMAIN-SUFFIX,sentry.io
 
   # NAME: Bing
   # AUTHOR: blackmatrix7
