@@ -191,7 +191,8 @@ parsers: # array
   # 添加规则
       prepend-rules: # 规则由上往下遍历，如上面规则已经命中，则不再往下处理        
         - RULE-SET,MyList_direct,DIRECT
-        - RULE-SET,MyList_proxy,👆 手动切换
+        - RULE-SET,MyList_proxy,🚀 节点选择
+        - RULE-SET,MyList_hand,👆 手动切换
         - RULE-SET,OpenAi,💭 OpenAi
         - RULE-SET,Download,DIRECT
         - RULE-SET,PrivateTracker,DIRECT
@@ -230,6 +231,13 @@ parsers: # array
           behavior: classical
           #url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/mylist_proxy.yaml"
           path: ./profiles/MyList_proxy.yaml
+          #interval: 86400
+
+        MyList_hand:
+          type: file
+          behavior: classical
+          #url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/mylist_proxy.yaml"
+          path: ./profiles/MyList_hand.yaml
           #interval: 86400
         
         Download: # 下载
