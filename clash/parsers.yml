@@ -222,23 +222,17 @@ parsers: # array
         MyList_direct:
           type: file
           behavior: classical
-         # url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/mylist_direct.yaml"
           path: ./profiles/MyList_direct.yaml
-         # interval: 86400
           
         MyList_proxy:
           type: file
           behavior: classical
-          #url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/mylist_proxy.yaml"
           path: ./profiles/MyList_proxy.yaml
-          #interval: 86400
 
         MyList_hand:
           type: file
           behavior: classical
-          #url: "https://raw.githubusercontent.com/Pukia-vj/cc/main/clash/rules/mylist_proxy.yaml"
           path: ./profiles/MyList_hand.yaml
-          #interval: 86400
         
         Download: # 下载
           type: http
